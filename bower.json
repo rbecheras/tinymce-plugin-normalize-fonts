@@ -1,0 +1,22 @@
+{
+  "name": "tinymce-plugin-normalize-fonts",
+  "version": "0.1.0",
+  "authors": [
+    "Rémi Becheras <rbecheras@sirap.fr>"
+  ],
+  "description": "An Plugin for the tinymce wysiwyg HTML editor that force font-faces and font-sizes to be defined as the editor handles it.",
+  "main": "plugin.js",
+  "keywords": [
+    "tinymce",
+    "plugin",
+    "fonts"
+  ],
+  "license": "LGPL-2.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
