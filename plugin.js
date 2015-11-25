@@ -11,7 +11,19 @@
 /*global tinymce:true */
 
 tinymce.PluginManager.add('normalizefonts', function(editor) {
-	/**
-	 * @TODO
-	 */
+
+
+
+	editor.on('change',function(evt){
+		var content = editor.getBody();
+
+		var p = $(content).find('*').contents().filter(function(){
+			return this.nodeType === 3;
+		});
+
+		// console.log(p);
+
+
+	});
+
 });
