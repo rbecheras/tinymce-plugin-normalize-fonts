@@ -12,18 +12,18 @@
 
 tinymce.PluginManager.add('normalizefonts', function(editor) {
 
+	function pStyles2Span(changeEvt){
+		if (changeEvt.lastLevel) {
+			// console.log(changeEvt);
+			// var content = editor.getBody();
+			// var allParapgraphs = $(content).find('*').contents().filter(function(){
+			// 	return this.nodeType === 3;
+			// });
+			// console.log(allParapgraphs);
+		}
+	}
 
-
-	editor.on('change',function(evt){
-		var content = editor.getBody();
-
-		var p = $(content).find('*').contents().filter(function(){
-			return this.nodeType === 3;
-		});
-
-		// console.log(p);
-
-
-	});
+	// move text formatting style rules from p blocks to inner span elements
+	editor.on('change',pStyles2Span);
 
 });
